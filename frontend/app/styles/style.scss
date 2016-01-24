@@ -1,0 +1,63 @@
+body {
+  background: #FFFBD5;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+button {
+  background: #E4E4E4;
+  border: 2px solid gray;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 14px;
+
+  &:hover:not(:disabled) {
+    background: #F6F6F6;
+    border: 2px solid black;
+  }
+
+  &.start {
+    margin: 5px 0 5px;
+    padding: 5px 10px 5px;
+  }
+}
+
+ul.claims {
+  padding-left: 10px;
+
+  li.claim {
+    overflow: hidden;
+    width: 80%;
+    border: 2px solid gray;
+    padding: 10px;
+    margin: 15px 0 15px;
+    list-style: none;
+
+    p {
+      margin: 5px 5px;
+    }
+
+    &.started {
+      border: 2px solid #bce8f1;
+      background: #d9edf7;
+    }
+
+    &.passed {
+      color: #3c763d;
+      background: #dff0d8;
+      border: 2px solid #d6e9c6;
+    }
+
+    &.failed {
+      color: #a94442;
+      border: 2px solid #ebccd1;
+      background: #f2dede;
+    }
+  }
+}
